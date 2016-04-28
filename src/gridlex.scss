@@ -5,23 +5,23 @@
 
 @import "gridlex-vars";
 
-[class*="grid"]{
+[class*="#{$gl-grid-selector}"]{
   box-sizing: border-box;
   display: flex;
   flex-flow: row wrap;
   margin: 0 (-$gl-gutter/2);
 }
-.col,
-[class*="col-"]{
+.#{$gl-col-selector},
+[class*="#{$gl-col-selector}-"]{
   box-sizing: border-box;
   flex: 0 0 auto;
   padding: 0 ($gl-gutter/2) $gl-gutter;
 }
-.col{
+.#{$gl-col-selector}{
   flex: 1 1 0%;
 }
-.grid.col,
-.grid[class*="col-"]{
+.#{$gl-grid-selector}.#{$gl-col-selector},
+.#{$gl-grid-selector}[class*="#{$gl-col-selector}-"]{
   margin: 0;
   padding: 0;
 }
@@ -30,11 +30,11 @@
     HELPERS SUFFIXES
 *************************/
 // FOR GRID
-[class*="grid-"]{
-// No spacing between cols : noGutter
-  &[class*="-noGutter"]{
+[class*="#{$gl-grid-selector}-"]{
+// No spacing between cols : gutterless
+  &[class*="-gutterless"]{
     margin: 0;
-    > [class*="col"]{
+    > [class*="#{$gl-col-selector}"]{
       padding: 0;
     }
   }
@@ -82,13 +82,13 @@
   }
 
 // Equal heights columns
-  &[class*="-equalHeight"] > [class*="col"]{
+  &[class*="-equalHeight"] > [class*="#{$gl-col-selector}"]{
     display: flex;
   }
 }
 
 // FOR COL
-[class*="col-"]{
+[class*="#{$gl-col-selector}-"]{
   &[class*="-top"]{
     align-self: flex-start;
   }
@@ -97,6 +97,9 @@
   }
   &[class*="-bottom"]{
     align-self: flex-end;
+  }
+  &[class*="-stretch"]{
+    align-self: stretch;
   }
   &[class*="-first"]{
       order: -1;
