@@ -65,7 +65,7 @@
   }
   &[class*="-column"] {
     flex-direction: column;
-    > [class*="col-"] {
+    > [class*="#{$gl-col-selector}-"] {
       flex-basis: auto;
     }
   }
