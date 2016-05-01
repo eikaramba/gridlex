@@ -3,12 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Gridlex - Just a Flexbox Grid System</title>
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@webdevlint">
-    <meta name="twitter:creator" content="@webdevlint">
-    <meta name="twitter:title" content="Gridlex">
-    <meta name="twitter:description" content="Just a Flexbox Grid System">
-    <meta name="twitter:image" content="http://gridlex.devlint.fr/demo/gridlex.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="demo/normalize.css">
     <link rel="stylesheet" href="gridlex.min.css">
@@ -112,25 +106,25 @@ OR
             <div class="column"><div class="demo"><p>grid-2</p></div></div>
             <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
         </div>
-        <div class="grid-3" tiny="1">
+        <div class="grid-3" small="1">
             <div class="column"><div class="demo"><p>grid-3</p></div></div>
             <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
             <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
         </div>
-        <div class="grid-4" tiny="2">
+        <div class="grid-4" small="2">
             <div class="column"><div class="demo"><p>grid-4</p></div></div>
             <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
             <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
             <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
         </div>
-        <div class="grid-5" tiny="2">
+        <div class="grid-5" small="2">
             <div class="column"><div class="demo"><p>grid-5</p></div></div>
             <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
             <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
             <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
             <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
         </div>
-        <div class="grid-6" small="3">
+        <div class="grid-6" medium="3">
             <div class="column"><div class="demo"><p>grid-6</p></div></div>
             <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
             <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
@@ -138,7 +132,7 @@ OR
             <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
             <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
         </div>
-        <div class="grid-7" medium="3">
+        <div class="grid-7" large="3">
             <div class="column"><div class="demo"><p>grid-7</p></div></div>
             <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
             <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
@@ -147,7 +141,7 @@ OR
             <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
             <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
         </div>
-        <div class="grid-8" medium="4">
+        <div class="grid-8" large="4">
             <div class="column"><div class="demo"><p>grid-8</p></div></div>
             <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
             <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
@@ -157,7 +151,7 @@ OR
             <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
             <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
         </div>
-        <div class="grid-9" large="3">
+        <div class="grid-9" huge="3">
             <div class="column"><div class="demo"><p>grid-9</p></div></div>
             <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
             <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
@@ -168,7 +162,7 @@ OR
             <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
             <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
         </div>
-        <div class="grid-10" medium="5" dmall="2">
+        <div class="grid-10" large="5" dmall="2">
             <div class="column"><div class="demo"><p>grid-10</p></div></div>
             <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
             <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
@@ -180,7 +174,7 @@ OR
             <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
             <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
         </div>
-        <div class="grid-11" medium="5" small="2">
+        <div class="grid-11" large="5" medium="2">
             <div class="column"><div class="demo"><p>grid-11</p></div></div>
             <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
             <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
@@ -193,7 +187,7 @@ OR
             <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
             <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
         </div>
-        <div class="grid-12" large="8" medium="6" small="4" tiny="2">
+        <div class="grid-12" huge="8" large="6" medium="4" small="2">
             <div class="column"><div class="demo"><p>grid-12</p></div></div>
             <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
             <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
@@ -209,7 +203,7 @@ OR
         </div>
         <p><em>But what happens if we have more than 3 columns in a <code>.grid-3</code> ?</em><br>This:</p>
 
-        <div class="grid-3" tiny="1">
+        <div class="grid-3" small="1">
             <div class="column">
                 <div class="demo">
                     <p>col 1</p>
@@ -282,22 +276,22 @@ OR
                     <p>col-12</p>
                 </div>
             </div>
-            <div class="column-11" medium="10" tiny="8">
+            <div class="column-11" large="10" small="8">
                 <div class="demo">
                     <p>col-11</p>
                 </div>
             </div>
-            <div class="column-1" medium="2" tiny="4">
+            <div class="column-1" large="2" small="4">
                 <div class="demo">
                     <p>col-1</p>
                 </div>
             </div>
-            <div class="column-10" tiny="7">
+            <div class="column-10" small="7">
                 <div class="demo">
                     <p>col-10</p>
                 </div>
             </div>
-            <div class="column-2" tiny="5">
+            <div class="column-2" small="5">
                 <div class="demo">
                     <p>col-2</p>
                 </div>
@@ -372,22 +366,22 @@ OR
                     <p>col-9</p>
                 </div>
             </div>
-            <div class="column-2" tiny="5">
+            <div class="column-2" small="5">
                 <div class="demo">
                     <p>col-2</p>
                 </div>
             </div>
-            <div class="column-10" tiny="7">
+            <div class="column-10" small="7">
                 <div class="demo">
                     <p>col-10</p>
                 </div>
             </div>
-            <div class="column-1" medium="2" tiny="4">
+            <div class="column-1" large="2" small="4">
                 <div class="demo">
                     <p>col-1</p>
                 </div>
             </div>
-            <div class="column-11" medium="10" tiny="8">
+            <div class="column-11" large="10" small="8">
                 <div class="demo">
                     <p>col-11</p>
                 </div>
@@ -492,8 +486,8 @@ OR
 &lt;/div></code></pre>
 
         <h2>Did I mention that you can mix the 3 ways?</h2>
-        <div class="grid-6" medium="4-right" small="spaceAround">
-            <div class="column-8" small="12">
+        <div class="grid-6" large="4-right" medium="spaceAround">
+            <div class="column-8" medium="12">
                 <div class="demo">
                     <p>col-8</p>
                 </div>
@@ -503,7 +497,7 @@ OR
                     <p>col</p>
                 </div>
             </div>
-            <div class="column" medium="2">
+            <div class="column" large="2">
                 <div class="demo">
                     <p>col</p>
                 </div>
@@ -513,7 +507,7 @@ OR
                     <p>col</p>
                 </div>
             </div>
-            <div class="column-5" small="6">
+            <div class="column-5" medium="6">
                 <div class="demo">
                     <p>col-5</p>
                 </div>
@@ -523,7 +517,7 @@ OR
                     <p>col-2</p>
                 </div>
             </div>
-            <div class="column-1" small="4">
+            <div class="column-1" medium="4">
                 <div class="demo">
                     <p>col-1</p>
                 </div>
@@ -643,12 +637,12 @@ OR
                     <p>col-9</p>
                 </div>
             </div>
-            <div class="col-1" tiny="2">
+            <div class="col-1" small="2">
                 <div class="demo">
                     <p>col-1</p>
                 </div>
             </div>
-            <div class="col-11" tiny="10">
+            <div class="col-11" small="10">
                 <div class="demo">
                     <p>col-11</p>
                 </div>
@@ -668,14 +662,14 @@ OR
 
         <h2>... and nesting in the grid:</h2>
         <div class="grid">
-            <div class="col-6" small="12"><p class="demo-explain">Just an "empty" col-6:</p></div>
-            <div class="col-6" small="12"><p class="demo-explain">Each column can become a grid too (<code>.col-6.grid</code>)</p></div>
-            <div class="col-6" small="12">
+            <div class="col-6" medium="12"><p class="demo-explain">Just an "empty" col-6:</p></div>
+            <div class="col-6" medium="12"><p class="demo-explain">Each column can become a grid too (<code>.col-6.grid</code>)</p></div>
+            <div class="col-6" medium="12">
                 <div class="demo">
                     <p>col-6</p>
                 </div>
             </div>
-            <div class="col-6 grid" small="12">
+            <div class="col-6 grid" medium="12">
                 <div class="col-4">
                     <div class="demo">
                         <p>col-4</p>
@@ -1178,17 +1172,17 @@ OR
     &lt;div class="col-4" push-left="off-4>col-4 push-left="off-4"&lt;/div>
 &lt;/div></code></pre>
         <div class="grid">
-            <div class="column-2-left-2" tiny="6-left-6">
+            <div class="column-2-left-2" small="6-left-6">
                 <div class="demo">
                     <p>col-2 push-left-2</p>
                 </div>
             </div>
-            <div class="column-2-left-2" tiny="6-left-6">
+            <div class="column-2-left-2" small="6-left-6">
                 <div class="demo">
                     <p>col-2 push-left="off-2"</p>
                 </div>
             </div>
-            <div class="column-2-left-2" tiny="6-left-6">
+            <div class="column-2-left-2" small="6-left-6">
                 <div class="demo">
                     <p>col-2 push-left="off-2"</p>
                 </div>
@@ -1225,9 +1219,9 @@ OR
             </div>
         </div>
 <pre><code>&lt;div class="grid">
+    &lt;div class="col-2" huge="left-2">col-2 push-left="off-2"&lt;/div>
     &lt;div class="col-2" large="left-2">col-2 push-left="off-2"&lt;/div>
     &lt;div class="col-2" medium="left-2">col-2 push-left="off-2"&lt;/div>
-    &lt;div class="col-2" small="left-2">col-2 push-left="off-2"&lt;/div>
 
     &lt;div class="col-2" push-right="off-2">col-2 push-right="off-2"&lt;/div>
     &lt;div class="col-2" push-right="off-2">col-2 push-right="off-2"&lt;/div>
@@ -1260,7 +1254,7 @@ OR
   -noGutter
   -equalHeight
 
-  tiny|small|medium|large="*[-right|-spaceBetween...]" (1 to 12)
+  small|medium|large|huge="*[-right|-spaceBetween...]" (1 to 12)
   </code></pre>
 
         <h2>Columns &amp; associated classes: </h2>

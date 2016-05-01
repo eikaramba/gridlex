@@ -30,6 +30,9 @@
 *************************/
 @include makeGridByNumber(#{$gl-grid-selector});
 
+@media #{$gl-xl}{
+  @include makeGridByNumber(huge);
+}
 @media #{$gl-lg}{
   @include makeGridByNumber(large);
 }
@@ -39,9 +42,6 @@
 @media #{$gl-sm}{
   @include makeGridByNumber(small);
 }
-@media #{$gl-xs}{
-  @include makeGridByNumber(tiny);
-}
 
 
 /************************
@@ -50,6 +50,10 @@
 @include makeCol(#{$gl-col-selector});
 @include makeOff(#{$gl-col-selector});
 
+@media #{$gl-xl}{
+  @include makeCol(huge);
+  @include makeOff(huge);
+}
 @media #{$gl-lg}{
   @include makeCol(large);
   @include makeOff(large);
@@ -61,8 +65,4 @@
 @media #{$gl-sm}{
   @include makeCol(small);
   @include makeOff(small);
-}
-@media #{$gl-xs}{
-  @include makeCol(tiny);
-  @include makeOff(tiny);
 }

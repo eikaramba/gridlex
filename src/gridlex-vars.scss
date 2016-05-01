@@ -6,20 +6,20 @@ $gl-selector-prefix:    "" !default;
 $gl-grid-label:         "grid" !default;
 $gl-col-label:          "column" !default;
 $gl-gutter:             1rem !default; // Total
-$gl-breakpoint-xs:      35.5em !default; // up to 568px
-$gl-breakpoint-sm:      48em !default; // max 768px
-$gl-breakpoint-md:      64em !default; // max 1024px
-$gl-breakpoint-lg:      80em !default; // max 1280px
+$gl-breakpoint-sm:      35.5em !default; // up to 568px
+$gl-breakpoint-md:      48em !default; // max 768px
+$gl-breakpoint-lg:      72em !default; // max 1152px
+$gl-breakpoint-xl:      90em !default; // max 1440px
 
 // Private Labels
 $gl-grid-selector: if($gl-selector-prefix != "", ($gl-selector-prefix + "-" + $gl-grid-label), $gl-grid-label);
 $gl-col-selector:  if($gl-selector-prefix != "", ($gl-selector-prefix + "-" + $gl-col-label), $gl-col-label);
 
 
-$gl-xs: "screen and (max-width: #{$gl-breakpoint-xs})"; // up to 568px
-$gl-sm: "screen and (max-width: #{$gl-breakpoint-sm})"; // max 768px
-$gl-md: "screen and (max-width: #{$gl-breakpoint-md})"; // max 1024px
-$gl-lg: "screen and (max-width: #{$gl-breakpoint-lg})"; // max 1280px
+$gl-sm: "screen and (max-width: #{$gl-breakpoint-sm})";
+$gl-md: "screen and (max-width: #{$gl-breakpoint-md})";
+$gl-lg: "screen and (max-width: #{$gl-breakpoint-lg})";
+$gl-xl: "screen and (max-width: #{$gl-breakpoint-xl})";
 
 $glp_col-1: (100%/12);
 $glp_col-2: ($glp_col-1*2);
