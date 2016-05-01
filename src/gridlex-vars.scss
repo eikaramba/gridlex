@@ -259,6 +259,37 @@ $glp_col-11-12: (100%/11);
 // Function to generate the offset
 @mixin makeOff($off)
 {
+  @if ($off == $gl-col-selector){
+    [class*="#{$gl-grid-selector}"]{
+        > [class*="-left-0"]{ margin-left: 0; }
+        > [class*="-left-1"]{ margin-left: $glp_col-1; }
+        > [class*="-left-2"]{ margin-left: $glp_col-2; }
+        > [class*="-left-3"]{ margin-left: $glp_col-3; }
+        > [class*="-left-4"]{ margin-left: $glp_col-4; }
+        > [class*="-left-5"]{ margin-left: $glp_col-5; }
+        > [class*="-left-6"]{ margin-left: $glp_col-6; }
+        > [class*="-left-6"]{ margin-left: $glp_col-6; }
+        > [class*="-left-7"]{ margin-left: $glp_col-7; }
+        > [class*="-left-8"]{ margin-left: $glp_col-8; }
+        > [class*="-left-9"]{ margin-left: $glp_col-9; }
+        > [class*="-left-10"]{ margin-left: $glp_col-10; }
+        > [class*="-left-11"]{ margin-left: $glp_col-11; }
+
+        > [class*="-right-0"]{ margin-right: 0; }
+        > [class*="-right-1"]{ margin-right: $glp_col-1; }
+        > [class*="-right-2"]{ margin-right: $glp_col-2; }
+        > [class*="-right-3"]{ margin-right: $glp_col-3; }
+        > [class*="-right-4"]{ margin-right: $glp_col-4; }
+        > [class*="-right-5"]{ margin-right: $glp_col-5; }
+        > [class*="-right-6"]{ margin-right: $glp_col-6; }
+        > [class*="-right-6"]{ margin-right: $glp_col-6; }
+        > [class*="-right-7"]{ margin-right: $glp_col-7; }
+        > [class*="-right-8"]{ margin-right: $glp_col-8; }
+        > [class*="-right-9"]{ margin-right: $glp_col-9; }
+        > [class*="-right-10"]{ margin-right: $glp_col-10; }
+        > [class*="-right-11"]{ margin-right: $glp_col-11; }
+    }
+  } @else {
     [class*="#{$gl-grid-selector}"]{
         > [#{$off}*="left-0"]{ margin-left: 0; }
         > [#{$off}*="left-1"]{ margin-left: $glp_col-1; }
@@ -288,4 +319,6 @@ $glp_col-11-12: (100%/11);
         > [#{$off}*="right-10"]{ margin-right: $glp_col-10; }
         > [#{$off}*="right-11"]{ margin-right: $glp_col-11; }
     }
+  }
+
 }

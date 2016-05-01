@@ -1178,56 +1178,56 @@ OR
     &lt;div class="col-4" push-left="off-4>col-4 push-left="off-4"&lt;/div>
 &lt;/div></code></pre>
         <div class="grid">
-            <div class="col-2_xs-6" push-left="off-2_xs-6">
+            <div class="column-2-left-2" tiny="6-left-6">
                 <div class="demo">
                     <p>col-2 push-left-2</p>
                 </div>
             </div>
-            <div class="col-2_xs-6" push-left="off-2_xs-6">
+            <div class="column-2-left-2" tiny="6-left-6">
                 <div class="demo">
                     <p>col-2 push-left="off-2"</p>
                 </div>
             </div>
-            <div class="col-2_xs-6" push-left="off-2_xs-6">
+            <div class="column-2-left-2" tiny="6-left-6">
                 <div class="demo">
                     <p>col-2 push-left="off-2"</p>
                 </div>
             </div>
-            <div class="col-2" push-right="off-2">
+            <div class="column-2-right-2">
                 <div class="demo">
                     <p>col-2 push-right="off-2"</p>
                 </div>
             </div>
-            <div class="col-2" push-right="off-2">
+            <div class="column-2-right-2">
                 <div class="demo">
                     <p>col-2 push-right="off-2"</p>
                 </div>
             </div>
-            <div class="col-2" push-right="off-2">
+            <div class="column-2-right-2">
                 <div class="demo">
                     <p>col-2 push-right="off-2"</p>
                 </div>
             </div>
-            <div class="col-2">
+            <div class="column-2">
                 <div class="demo">
                     <p>col-2</p>
                 </div>
             </div>
-            <div class="col-6" push-left="off-1" push-right="off-1">
+            <div class="column-6-left-1-right-1">
                 <div class="demo">
                     <p>col-6 push-left="off-1" push-right="off-1"</p>
                 </div>
             </div>
-            <div class="col-2">
+            <div class="column-2">
                 <div class="demo">
                     <p>col-2</p>
                 </div>
             </div>
         </div>
 <pre><code>&lt;div class="grid">
-    &lt;div class="col-2" push-left="off-2">col-2 push-left="off-2"&lt;/div>
-    &lt;div class="col-2" push-left="off-2">col-2 push-left="off-2"&lt;/div>
-    &lt;div class="col-2" push-left="off-2">col-2 push-left="off-2"&lt;/div>
+    &lt;div class="col-2" large="left-2">col-2 push-left="off-2"&lt;/div>
+    &lt;div class="col-2" medium="left-2">col-2 push-left="off-2"&lt;/div>
+    &lt;div class="col-2" small="left-2">col-2 push-left="off-2"&lt;/div>
 
     &lt;div class="col-2" push-right="off-2">col-2 push-right="off-2"&lt;/div>
     &lt;div class="col-2" push-right="off-2">col-2 push-right="off-2"&lt;/div>
@@ -1245,10 +1245,6 @@ OR
         <h2>Grid &amp; associated classes</h2>
         <pre class="doc"><code>.grid
   -* (1 to 12)
-    _xs-* (1 to 12)
-    _sm-* (1 to 12)
-    _md-* (1 to 12)
-    _lg-* (1 to 12)
 
   -center
   -right
@@ -1262,15 +1258,15 @@ OR
   -column-reverse
 
   -noGutter
-  -equalHeight</code></pre>
+  -equalHeight
+
+  tiny|small|medium|large="*[-right|-spaceBetween...]" (1 to 12)
+  </code></pre>
 
         <h2>Columns &amp; associated classes: </h2>
-        <pre class="doc"><code>.col
+        <pre class="doc"><code>.column
   -* (1 to 12)
-  _xs-* (1 to 12)
-  _sm-* (1 to 12)
-  _md-* (1 to 12)
-  _lg-* (1 to 12)
+
     i.e. &lt;div class="col-12_lg-8_md-6_sm-3_xs-1">...&lt;/div>
 
   .col-first

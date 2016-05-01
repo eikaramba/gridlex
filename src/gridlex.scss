@@ -48,7 +48,7 @@
     COLS SIZES
 *************************/
 @include makeCol(#{$gl-col-selector});
-@include makeOff(off);
+@include makeOff(#{$gl-col-selector});
 
 @media #{$gl-lg}{
   @include makeCol(large);
