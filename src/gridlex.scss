@@ -24,88 +24,6 @@
   padding: 0;
 }
 
-/************************
-    HELPERS SUFFIXES
-*************************/
-// FOR GRID
-[class*="#{$gl-grid-selector}-"]{
-// No spacing between cols : gutterless
-  &[class*="-gutterless"]{
-    margin: 0;
-    > [class*="#{$gl-col-selector}"]{
-      padding: 0;
-    }
-  }
-
-// Horizontal alignment
-  &[class*="-center"]{
-    justify-content: center;
-  }
-  &[class*="-right"]{
-    justify-content: flex-end;
-    align-self: flex-end;
-    margin-left: auto;
-  }
-// Vertical alignment
-  &[class*="-top"]{
-    align-items: flex-start;
-  }
-  &[class*="-middle"]{
-    align-items: center;
-  }
-  &[class*="-bottom"]{
-    align-items: flex-end;
-  }
-
-// Orders
-  &[class*="-reverse"]{
-    flex-direction: row-reverse;
-  }
-  &[class*="-column"] {
-    flex-direction: column;
-    > [class*="#{$gl-col-selector}"] {
-      flex-basis: auto;
-    }
-  }
-  &[class*="-column-reverse"]{
-    flex-direction: column-reverse;
-  }
-
-// Spaces between and around cols
-  &[class*="-spaceBetween"]{
-    justify-content: space-between;
-  }
-  &[class*="-spaceAround"]{
-    justify-content: space-around;
-  }
-
-// Equal heights columns
-  &[class*="-equalHeight"] > [class*="#{$gl-col-selector}"]{
-    display: flex;
-  }
-}
-
-// FOR COL
-[class*="#{$gl-col-selector}-"]{
-  &[class*="-top"]{
-    align-self: flex-start;
-  }
-  &[class*="-middle"]{
-    align-self: center;
-  }
-  &[class*="-bottom"]{
-    align-self: flex-end;
-  }
-  &[class*="-stretch"]{
-    align-self: stretch;
-  }
-  &[class*="-first"]{
-      order: -1;
-  }
-  &[class*="-last"]{
-      order: 1;
-  }
-}
 
 /************************
     GRID BY NUMBER
@@ -113,16 +31,16 @@
 @include makeGridByNumber(#{$gl-grid-selector});
 
 @media #{$gl-lg}{
-  @include makeGridByNumber(_lg);
+  @include makeGridByNumber(large);
 }
 @media #{$gl-md}{
-  @include makeGridByNumber(_md);
+  @include makeGridByNumber(medium);
 }
 @media #{$gl-sm}{
-  @include makeGridByNumber(_sm);
+  @include makeGridByNumber(small);
 }
 @media #{$gl-xs}{
-  @include makeGridByNumber(_xs);
+  @include makeGridByNumber(tiny);
 }
 
 
@@ -133,18 +51,18 @@
 @include makeOff(off);
 
 @media #{$gl-lg}{
-  @include makeCol(_lg);
-  @include makeOff(_lg);
+  @include makeCol(large);
+  @include makeOff(large);
 }
 @media #{$gl-md}{
-  @include makeCol(_md);
-  @include makeOff(_md);
+  @include makeCol(medium);
+  @include makeOff(medium);
 }
 @media #{$gl-sm}{
-  @include makeCol(_sm);
-  @include makeOff(_sm);
+  @include makeCol(small);
+  @include makeOff(small);
 }
 @media #{$gl-xs}{
-  @include makeCol(_xs);
-  @include makeOff(_xs);
+  @include makeCol(tiny);
+  @include makeOff(tiny);
 }
