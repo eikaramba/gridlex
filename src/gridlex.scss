@@ -110,7 +110,7 @@
 /************************
     GRID BY NUMBER
 *************************/
-@include makeGridByNumber(grid);
+@include makeGridByNumber(#{$gl-grid-selector});
 
 @media #{$gl-lg}{
   @include makeGridByNumber(_lg);
@@ -129,7 +129,7 @@
 /************************
     COLS SIZES
 *************************/
-@include makeCol(col);
+@include makeCol(#{$gl-col-selector});
 @include makeOff(off);
 
 @media #{$gl-lg}{
