@@ -497,6 +497,14 @@
   [medium*="equalHeight"] > [class*="column"] {
     display: flex;
   }
+
+  [class*="grid"] {
+    margin: 0 -0.325rem;
+  }
+
+  [class*="column"] {
+    padding: 0 0.325rem 0.65rem;
+  }
 }
 @media screen and (max-width: 35.5em) {
   [small^="1"] > .column, [small^="1"] > [class*="column-"] {

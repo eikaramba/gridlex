@@ -38,6 +38,12 @@
 }
 @media #{$gl-md}{
   @include makeGridByNumber(medium);
+  [class*="#{$gl-grid-selector}"]{
+    margin: 0 (-$gl-gutter-small/2);
+  }
+  [class*="#{$gl-col-selector}"]{
+    padding: 0 ($gl-gutter-small/2) $gl-gutter-small;
+  }
 }
 @media #{$gl-sm}{
   @include makeGridByNumber(small);

@@ -6,6 +6,7 @@ $gl-selector-prefix:    "" !default;
 $gl-grid-label:         "grid" !default;
 $gl-col-label:          "column" !default;
 $gl-gutter:             1rem !default; // Total
+$gl-gutter-small:       0.65rem !default; // Total
 $gl-breakpoint-sm:      35.5em !default; // up to 568px
 $gl-breakpoint-md:      48em !default; // max 768px
 $gl-breakpoint-lg:      72em !default; // max 1152px
