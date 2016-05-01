@@ -44,7 +44,7 @@ $glp_col-11-12: (100%/11);
 // Function to generate the grid by number
 @mixin makeGridByNumber($grid)
 {
-  @if($grid == #{$gl-grid-selector}){
+  @if ($grid == $gl-grid-selector) {
     [class*="#{$grid}-1"] > .#{$gl-col-selector}, [class*="#{$grid}-1"] > [class*="#{$gl-col-selector}-"]{ flex-basis: $glp_col-12; max-width: $glp_col-12;}
     [class*="#{$grid}-2"] > .#{$gl-col-selector}, [class*="#{$grid}-2"] > [class*="#{$gl-col-selector}-"]{ flex-basis: $glp_col-6; max-width: $glp_col-6;}
     [class*="#{$grid}-3"] > .#{$gl-col-selector}, [class*="#{$grid}-3"] > [class*="#{$gl-col-selector}-"]{ flex-basis: $glp_col-4; max-width: $glp_col-4;}
@@ -61,7 +61,7 @@ $glp_col-11-12: (100%/11);
 
     [class*="#{$gl-grid-selector}-"]{
     // No spacing between cols : gutterless
-      &[class*="-gutterless"]{
+      &[class*="-noGutter"]{
         margin: 0;
         > [class*="#{$gl-col-selector}"]{
           padding: 0;
@@ -130,7 +130,7 @@ $glp_col-11-12: (100%/11);
     [#{$grid}^="12"] > .#{$gl-col-selector}, [#{$grid}^="12"] > [class*="#{$gl-col-selector}-"]{ flex-basis: $glp_col-1; max-width: $glp_col-1;}
     [#{$grid}^="auto"] > .#{$gl-col-selector}, [#{$grid}^="auto"] > [class*="#{$gl-col-selector}-"]{ flex-basis: auto; max-width: none;}
 
-    [#{$grid}*="gutterless"]{
+    [#{$grid}*="noGutter"]{
       margin: 0;
       > [class*="#{$gl-col-selector}"]{
         padding: 0;
@@ -189,7 +189,7 @@ $glp_col-11-12: (100%/11);
 // Function to generate the grid by columns
 @mixin makeCol($col)
 {
-  @if($col == #{$gl-col-selector}){
+  @if ($col == $gl-col-selector){
     [class*="#{$gl-grid-selector}"] {
         > [class*="#{$col}-1"]{ flex-basis: $glp_col-1; max-width: $glp_col-1;}
         > [class*="#{$col}-2"]{ flex-basis: $glp_col-2; max-width: $glp_col-2;}

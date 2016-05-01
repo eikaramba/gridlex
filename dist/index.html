@@ -59,18 +59,18 @@
 <div class="demoPage">
     <section>
         <div class="grid">
-            <div class="col-6_xs-12">
+            <div class="column-6_xs-12">
                 <h2>Simple. Robust. Responsive. Flexible.</h2><p>Based on <a href="http://dev.w3.org/csswg/css-flexbox/">Flexbox</a> (<em>CSS Flexible Box Layout Module</em>), <strong>Gridlex</strong> is a very simple css grid system to quickly create modern layouts and submodules.</p>
             </div>
-            <div class="col-5_xs-12-bottom github-button" push-left="off-1_xs-0">
+            <div class="column-5_xs-12-bottom github-button" push-left="off-1_xs-0">
                 <a class="github-button" href="https://github.com/devlint/gridlex" data-style="mega" data-count-href="/devlint/gridlex/stargazers" data-count-api="/repos/devlint/gridlex#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star devlint/gridlex on GitHub">View Project Source</a>
                 <a class="github-button" href="https://github.com/devlint/gridlex/fork" data-style="mega" data-count-href="/devlint/gridlex/network" data-count-api="/repos/devlint/gridlex#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork devlint/gridlex on GitHub">Fork Gridlex</a>
                 <a class="github-button" href="https://github.com/devlint/gridlex/archive/master.zip" data-style="mega" aria-label="Download devlint/gridlex on GitHub">Download (zip)</a>
             </div>
 
-            <div class="col-12">
+            <div class="column-12">
                 <h3>How it works?</h3>
-                <p>The concept is simple: <br> you need to wrap your <code>.col</code> in a <code>.grid</code>. </p>
+                <p>The concept is simple: <br> you need to wrap your <code>.column</code> in a <code>.grid</code>. </p>
                 <p>That's all.</p><br>
                 <p><strong>Gridlex</strong> is ready to use "out of the box" in CSS, with all the vendor prefixes needed:</p>
                 <pre><code>&lt;link rel="stylesheet" href="<a href="https://cdn.jsdelivr.net/gridlex/2.0.8/gridlex.min.css">https://cdn.jsdelivr.net/gridlex/2.0.8/gridlex.min.css</a>">
@@ -78,14 +78,14 @@ OR
 &lt;link rel="stylesheet" href="<a href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.0.8/gridlex.min.css">https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.0.8/gridlex.min.css</a>"></code></pre>
                 <p>Or you can use Less or Sass files included!</p>
             </div>
-            <div class="col-12">
+            <div class="column-12">
                 <h3>What can we expect?</h3>
                 <ul class="grid-3_sm-2_xs-1">
-                    <li class="col">Basically each column is the same width as every other cell in the grid.</li>
-                    <li class="col">But you can add sizing classes to individual columns.</li>
-                    <li class="col">For responsive designs, you can add classes based on media-queries.</li>
-                    <li class="col">Top, bottom, or middle. For the grid. And for the columns.</li>
-                    <li class="col">Grids can be nested. Always. Directly in a column.</li>
+                    <li class="column">Basically each column is the same width as every other cell in the grid.</li>
+                    <li class="column">But you can add sizing classes to individual columns.</li>
+                    <li class="column">For responsive designs, you can add classes based on media-queries.</li>
+                    <li class="column">Top, bottom, or middle. For the grid. And for the columns.</li>
+                    <li class="column">Grids can be nested. Always. Directly in a column.</li>
                 </ul>
             </div>
             <div class="col-12">
@@ -106,156 +106,156 @@ OR
             Why should we be required to put sizing classes on every single cell when they all have the same width? </p>
             <p>In this ways, you will always have the specified number of columns in a row:</p>
         <div class="grid-1">
-            <div class="col"><div class="demo"><p>grid-1</p></div></div>
+            <div class="column"><div class="demo"><p>grid-1</p></div></div>
         </div>
         <div class="grid-2">
-            <div class="col"><div class="demo"><p>grid-2</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>grid-2</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
         </div>
-        <div class="grid-3_xs-1">
-            <div class="col"><div class="demo"><p>grid-3</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
+        <div class="grid-3" tiny="1">
+            <div class="column"><div class="demo"><p>grid-3</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
         </div>
-        <div class="grid-4_xs-2">
-            <div class="col"><div class="demo"><p>grid-4</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
+        <div class="grid-4" tiny="2">
+            <div class="column"><div class="demo"><p>grid-4</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
         </div>
-        <div class="grid-5_xs-2">
-            <div class="col"><div class="demo"><p>grid-5</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
+        <div class="grid-5" tiny="2">
+            <div class="column"><div class="demo"><p>grid-5</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
         </div>
-        <div class="grid-6_sm-3">
-            <div class="col"><div class="demo"><p>grid-6</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
+        <div class="grid-6" small="3">
+            <div class="column"><div class="demo"><p>grid-6</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
         </div>
-        <div class="grid-7_md-3">
-            <div class="col"><div class="demo"><p>grid-7</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
+        <div class="grid-7" medium="3">
+            <div class="column"><div class="demo"><p>grid-7</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
         </div>
-        <div class="grid-8_md-4">
-            <div class="col"><div class="demo"><p>grid-8</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
+        <div class="grid-8" medium="4">
+            <div class="column"><div class="demo"><p>grid-8</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
         </div>
-        <div class="grid-9_lg-3">
-            <div class="col"><div class="demo"><p>grid-9</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
+        <div class="grid-9" large="3">
+            <div class="column"><div class="demo"><p>grid-9</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
         </div>
-        <div class="grid-10_md-5_sm-2">
-            <div class="col"><div class="demo"><p>grid-10</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
+        <div class="grid-10" medium="5" dmall="2">
+            <div class="column"><div class="demo"><p>grid-10</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
         </div>
-        <div class="grid-11_md-5_sm-2">
-            <div class="col"><div class="demo"><p>grid-11</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
+        <div class="grid-11" medium="5" small="2">
+            <div class="column"><div class="demo"><p>grid-11</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
         </div>
-        <div class="grid-12_lg-8_md-6_sm-4_xs-2">
-            <div class="col"><div class="demo"><p>grid-12</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
-            <div class="col"><div class="demo"><p>&nbsp;</p></div></div>
+        <div class="grid-12" large="8" medium="6" small="4" tiny="2">
+            <div class="column"><div class="demo"><p>grid-12</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
+            <div class="column"><div class="demo"><p>&nbsp;</p></div></div>
         </div>
         <p><em>But what happens if we have more than 3 columns in a <code>.grid-3</code> ?</em><br>This:</p>
 
-        <div class="grid-3_xs-1">
-            <div class="col">
+        <div class="grid-3" tiny="1">
+            <div class="column">
                 <div class="demo">
                     <p>col 1</p>
                 </div>
             </div>
-            <div class="col">
+            <div class="column">
                 <div class="demo">
                     <p>col 2</p>
                 </div>
             </div>
-            <div class="col">
+            <div class="column">
                 <div class="demo">
                     <p>col 3</p>
                 </div>
             </div>
-            <div class="col">
+            <div class="column">
                 <div class="demo">
                     <p>col 4</p>
                 </div>
             </div>
-            <div class="col">
+            <div class="column">
                 <div class="demo">
                     <p>col 5</p>
                 </div>
             </div>
-            <div class="col">
+            <div class="column">
                 <div class="demo">
                     <p>col 6</p>
                 </div>
             </div>
-            <div class="col">
+            <div class="column">
                 <div class="demo">
                     <p>col 7</p>
                 </div>
             </div>
-            <div class="col">
+            <div class="column">
                 <div class="demo">
                     <p>col 8</p>
                 </div>
             </div>
-            <div class="col">
+            <div class="column">
                 <div class="demo">
                     <p>col 9</p>
                 </div>
             </div>
-            <div class="col">
+            <div class="column">
                 <div class="demo">
                     <p>col 10</p>
                 </div>
@@ -273,121 +273,121 @@ OR
     &lt;div class="col">...&lt;/div>
 &lt;/div></code></pre>
 
-        <h2>2. The precise. Compose cell by cell (with class like <code>.col-*</code>)</h2>
+        <h2>2. The precise. Compose cell by cell (with class like <code>.column-*</code>)</h2>
         <h3>See <a href="#documentation">documentation</a> to have the list of available classes</h3>
 
         <div class="grid">
-            <div class="col-12">
+            <div class="column-12">
                 <div class="demo">
                     <p>col-12</p>
                 </div>
             </div>
-            <div class="col-11_md-10_xs-8">
+            <div class="column-11" medium="10" tiny="8">
                 <div class="demo">
                     <p>col-11</p>
                 </div>
             </div>
-            <div class="col-1_md-2_xs-4">
+            <div class="column-1" medium="2" tiny="4">
                 <div class="demo">
                     <p>col-1</p>
                 </div>
             </div>
-            <div class="col-10_xs-7">
+            <div class="column-10" tiny="7">
                 <div class="demo">
                     <p>col-10</p>
                 </div>
             </div>
-            <div class="col-2_xs-5">
+            <div class="column-2" tiny="5">
                 <div class="demo">
                     <p>col-2</p>
                 </div>
             </div>
-            <div class="col-9">
+            <div class="column-9">
                 <div class="demo">
                     <p>col-9</p>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="column-3">
                 <div class="demo">
                     <p>col-3</p>
                 </div>
             </div>
-            <div class="col-8">
+            <div class="column-8">
                 <div class="demo">
                     <p>col-8</p>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="column-4">
                 <div class="demo">
                     <p>col-4</p>
                 </div>
             </div>
-            <div class="col-7">
+            <div class="column-7">
                 <div class="demo">
                     <p>col-7</p>
                 </div>
             </div>
-            <div class="col-5">
+            <div class="column-5">
                 <div class="demo">
                     <p>col-5</p>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="column-6">
                 <div class="demo">
                     <p>col-6</p>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="column-6">
                 <div class="demo">
                     <p>col-6</p>
                 </div>
             </div>
-            <div class="col-5">
+            <div class="column-5">
                 <div class="demo">
                     <p>col-5</p>
                 </div>
             </div>
-            <div class="col-7">
+            <div class="column-7">
                 <div class="demo">
                     <p>col-7</p>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="column-4">
                 <div class="demo">
                     <p>col-4</p>
                 </div>
             </div>
-            <div class="col-8">
+            <div class="column-8">
                 <div class="demo">
                     <p>col-8</p>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="column-3">
                 <div class="demo">
                     <p>col-3</p>
                 </div>
             </div>
-            <div class="col-9">
+            <div class="column-9">
                 <div class="demo">
                     <p>col-9</p>
                 </div>
             </div>
-            <div class="col-2_xs-5">
+            <div class="column-2" tiny="5">
                 <div class="demo">
                     <p>col-2</p>
                 </div>
             </div>
-            <div class="col-10_xs-7">
+            <div class="column-10" tiny="7">
                 <div class="demo">
                     <p>col-10</p>
                 </div>
             </div>
-            <div class="col-1_md-2_xs-4">
+            <div class="column-1" medium="2" tiny="4">
                 <div class="demo">
                     <p>col-1</p>
                 </div>
             </div>
-            <div class="col-11_md-10_xs-8">
+            <div class="column-11" medium="10" tiny="8">
                 <div class="demo">
                     <p>col-11</p>
                 </div>
@@ -406,7 +406,7 @@ OR
 
         <p>So here we have a grid with one column...</p>
         <div class="grid">
-            <div class="col">
+            <div class="column">
                 <div class="demo">
                     <p>auto</p>
                 </div>
@@ -414,22 +414,22 @@ OR
         </div>
         <p>... another one with four columns...</p>
         <div class="grid">
-            <div class="col">
+            <div class="column">
                 <div class="demo">
                     <p>auto</p>
                 </div>
             </div>
-            <div class="col">
+            <div class="column">
                 <div class="demo">
                     <p>auto</p>
                 </div>
             </div>
-            <div class="col">
+            <div class="column">
                 <div class="demo">
                     <p>auto</p>
                 </div>
             </div>
-            <div class="col">
+            <div class="column">
                 <div class="demo">
                     <p>auto</p>
                 </div>
@@ -437,47 +437,47 @@ OR
         </div>
         <p>... and last a grid with ... nine columns?</p>
         <div class="grid_xs-4">
-            <div class="col">
+            <div class="column">
                 <div class="demo">
                     <p>auto</p>
                 </div>
             </div>
-            <div class="col">
+            <div class="column">
                 <div class="demo">
                     <p>auto</p>
                 </div>
             </div>
-            <div class="col">
+            <div class="column">
                 <div class="demo">
                     <p>auto</p>
                 </div>
             </div>
-            <div class="col">
+            <div class="column">
                 <div class="demo">
                     <p>auto</p>
                 </div>
             </div>
-            <div class="col">
+            <div class="column">
                 <div class="demo">
                     <p>auto</p>
                 </div>
             </div>
-            <div class="col">
+            <div class="column">
                 <div class="demo">
                     <p>auto</p>
                 </div>
             </div>
-            <div class="col">
+            <div class="column">
                 <div class="demo">
                     <p>auto</p>
                 </div>
             </div>
-            <div class="col">
+            <div class="column">
                 <div class="demo">
                     <p>auto</p>
                 </div>
             </div>
-            <div class="col">
+            <div class="column">
                 <div class="demo">
                     <p>auto</p>
                 </div>
@@ -492,73 +492,73 @@ OR
 &lt;/div></code></pre>
 
         <h2>Did I mention that you can mix the 3 ways?</h2>
-        <div class="grid-6_sm-2">
-            <div class="col-8_sm-12">
+        <div class="grid-6" medium="4-right" small="spaceAround">
+            <div class="column-8" small="12">
                 <div class="demo">
                     <p>col-8</p>
                 </div>
             </div>
-            <div class="col">
+            <div class="column">
                 <div class="demo">
                     <p>col</p>
                 </div>
             </div>
-            <div class="col">
+            <div class="column" medium="2">
                 <div class="demo">
                     <p>col</p>
                 </div>
             </div>
-            <div class="col">
+            <div class="column">
                 <div class="demo">
                     <p>col</p>
                 </div>
             </div>
-            <div class="col-5_sm-6">
+            <div class="column-5" small="6">
                 <div class="demo">
                     <p>col-5</p>
                 </div>
             </div>
-            <div class="col-2">
+            <div class="column-2">
                 <div class="demo">
                     <p>col-2</p>
                 </div>
             </div>
-            <div class="col-1_sm-4">
+            <div class="column-1" small="4">
                 <div class="demo">
                     <p>col-1</p>
                 </div>
             </div>
-            <div class="col">
+            <div class="column">
                 <div class="demo">
                     <p>col</p>
                 </div>
             </div>
-            <div class="col">
+            <div class="column">
                 <div class="demo">
                     <p>col</p>
                 </div>
             </div>
-            <div class="col">
+            <div class="column">
                 <div class="demo">
                     <p>col</p>
                 </div>
             </div>
-            <div class="col">
+            <div class="column">
                 <div class="demo">
                     <p>col</p>
                 </div>
             </div>
-            <div class="col">
+            <div class="column">
                 <div class="demo">
                     <p>col</p>
                 </div>
             </div>
-            <div class="col">
+            <div class="column">
                 <div class="demo">
                     <p>col</p>
                 </div>
             </div>
-            <div class="col">
+            <div class="column">
                 <div class="demo">
                     <p>col</p>
                 </div>
@@ -643,12 +643,12 @@ OR
                     <p>col-9</p>
                 </div>
             </div>
-            <div class="col-1_xs-2">
+            <div class="col-1" tiny="2">
                 <div class="demo">
                     <p>col-1</p>
                 </div>
             </div>
-            <div class="col-11_xs-10">
+            <div class="col-11" tiny="10">
                 <div class="demo">
                     <p>col-11</p>
                 </div>
@@ -668,14 +668,14 @@ OR
 
         <h2>... and nesting in the grid:</h2>
         <div class="grid">
-            <div class="col-6_sm-12"><p class="demo-explain">Just an "empty" col-6:</p></div>
-            <div class="col-6_sm-12"><p class="demo-explain">Each column can become a grid too (<code>.col-6.grid</code>)</p></div>
-            <div class="col-6_sm-12">
+            <div class="col-6" small="12"><p class="demo-explain">Just an "empty" col-6:</p></div>
+            <div class="col-6" small="12"><p class="demo-explain">Each column can become a grid too (<code>.col-6.grid</code>)</p></div>
+            <div class="col-6" small="12">
                 <div class="demo">
                     <p>col-6</p>
                 </div>
             </div>
-            <div class="col-6_sm-12 grid">
+            <div class="col-6 grid" small="12">
                 <div class="col-4">
                     <div class="demo">
                         <p>col-4</p>

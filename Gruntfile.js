@@ -9,28 +9,12 @@ module.exports = function(grunt) {
 
     pkg: grunt.file.readJSON('package.json'),
 
-    /* LESS
-      ================================================================= */
-    less: {
-      less: {
-        options: {
-          paths: ["src"],
-          strictMath: true
-        },
-        files: {
-          "dist/gridlex.css": "src/gridlex.less",
-          "dist/demo/demo.css": "dist/demo/demo.less"
-        }
-      }
-    },
-
     /* SASS
       ================================================================= */
     sass: {
       dist: {
         options: {
-          style: 'expanded',
-          sourcemap: 'none'
+          style: 'expanded'
         },
         files: {
           "dist/gridlex.css": "src/gridlex.scss"
@@ -76,7 +60,6 @@ module.exports = function(grunt) {
   /* GRUNT TASKS
   ================================================================= */
   grunt.registerTask('default', ['compile']);
-  // grunt.registerTask('compile', ['less', 'postcss']);
   grunt.registerTask('compile', ['sass', 'postcss']); // uncomment for Sass compilation
 
 };
