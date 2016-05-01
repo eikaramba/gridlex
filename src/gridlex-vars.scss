@@ -4,7 +4,7 @@
 // Customizable Labels
 $gl-selector-prefix:    "" !default;
 $gl-grid-label:         "grid" !default;
-$gl-col-label:          "col" !default;
+$gl-col-label:          "column" !default;
 $gl-gutter:             1rem !default; // Total
 $gl-breakpoint-xs:      35.5em !default; // up to 568px
 $gl-breakpoint-sm:      48em !default; // max 768px
@@ -44,36 +44,36 @@ $glp_col-11-12: (100%/11);
 // Function to generate the grid by number
 @mixin makeGridByNumber($grid)
 {
-  [class*="#{$grid}-1"] > .col, [class*="#{$grid}-1"] > [class*="#{$gl-col-selector}-"]{ flex-basis: $glp_col-12;}
-  [class*="#{$grid}-2"] > .col, [class*="#{$grid}-2"] > [class*="#{$gl-col-selector}-"]{ flex-basis: $glp_col-6;}
-  [class*="#{$grid}-3"] > .col, [class*="#{$grid}-3"] > [class*="#{$gl-col-selector}-"]{ flex-basis: $glp_col-4;}
-  [class*="#{$grid}-4"] > .col, [class*="#{$grid}-4"] > [class*="#{$gl-col-selector}-"]{ flex-basis: $glp_col-3;}
-  [class*="#{$grid}-5"] > .col, [class*="#{$grid}-5"] > [class*="#{$gl-col-selector}-"]{ flex-basis: $glp_col-5-12;}
-  [class*="#{$grid}-6"] > .col, [class*="#{$grid}-6"] > [class*="#{$gl-col-selector}-"]{ flex-basis: $glp_col-2;}
-  [class*="#{$grid}-7"] > .col, [class*="#{$grid}-7"] > [class*="#{$gl-col-selector}-"]{ flex-basis: $glp_col-7-12;}
-  [class*="#{$grid}-8"] > .col, [class*="#{$grid}-8"] > [class*="#{$gl-col-selector}-"]{ flex-basis: $glp_col-8-12;}
-  [class*="#{$grid}-9"] > .col, [class*="#{$grid}-9"] > [class*="#{$gl-col-selector}-"]{ flex-basis: $glp_col-9-12;}
-  [class*="#{$grid}-10"] > .col, [class*="#{$grid}-10"] > [class*="#{$gl-col-selector}-"]{ flex-basis: $glp_col-10-12;}
-  [class*="#{$grid}-11"] > .col, [class*="#{$grid}-11"] > [class*="#{$gl-col-selector}-"]{ flex-basis: $glp_col-11-12;}
-  [class*="#{$grid}-12"] > .col, [class*="#{$grid}-12"] > [class*="#{$gl-col-selector}-"]{ flex-basis: $glp_col-1;}
+  [class*="#{$grid}-1"] > .#{$gl-col-selector}, [class*="#{$grid}-1"] > [class*="#{$gl-col-selector}-"]{ flex-basis: $glp_col-12; max-width: $glp_col-12;}
+  [class*="#{$grid}-2"] > .#{$gl-col-selector}, [class*="#{$grid}-2"] > [class*="#{$gl-col-selector}-"]{ flex-basis: $glp_col-6; max-width: $glp_col-6;}
+  [class*="#{$grid}-3"] > .#{$gl-col-selector}, [class*="#{$grid}-3"] > [class*="#{$gl-col-selector}-"]{ flex-basis: $glp_col-4; max-width: $glp_col-4;}
+  [class*="#{$grid}-4"] > .#{$gl-col-selector}, [class*="#{$grid}-4"] > [class*="#{$gl-col-selector}-"]{ flex-basis: $glp_col-3; max-width: $glp_col-3;}
+  [class*="#{$grid}-5"] > .#{$gl-col-selector}, [class*="#{$grid}-5"] > [class*="#{$gl-col-selector}-"]{ flex-basis: $glp_col-5-12; max-width: $glp_col-5-12;}
+  [class*="#{$grid}-6"] > .#{$gl-col-selector}, [class*="#{$grid}-6"] > [class*="#{$gl-col-selector}-"]{ flex-basis: $glp_col-2; max-width: $glp_col-2;}
+  [class*="#{$grid}-7"] > .#{$gl-col-selector}, [class*="#{$grid}-7"] > [class*="#{$gl-col-selector}-"]{ flex-basis: $glp_col-7-12; max-width: $glp_col-7-12;}
+  [class*="#{$grid}-8"] > .#{$gl-col-selector}, [class*="#{$grid}-8"] > [class*="#{$gl-col-selector}-"]{ flex-basis: $glp_col-8-12; max-width: $glp_col-8-12;}
+  [class*="#{$grid}-9"] > .#{$gl-col-selector}, [class*="#{$grid}-9"] > [class*="#{$gl-col-selector}-"]{ flex-basis: $glp_col-9-12; max-width: $glp_col-9-12;}
+  [class*="#{$grid}-10"] > .#{$gl-col-selector}, [class*="#{$grid}-10"] > [class*="#{$gl-col-selector}-"]{ flex-basis: $glp_col-10-12; max-width: $glp_col-10-12;}
+  [class*="#{$grid}-11"] > .#{$gl-col-selector}, [class*="#{$grid}-11"] > [class*="#{$gl-col-selector}-"]{ flex-basis: $glp_col-11-12; max-width: $glp_col-11-12;}
+  [class*="#{$grid}-12"] > .#{$gl-col-selector}, [class*="#{$grid}-12"] > [class*="#{$gl-col-selector}-"]{ flex-basis: $glp_col-1; max-width: $glp_col-1;}
 }
 
 // Function to generate the grid by columns
 @mixin makeCol($col)
 {
     [class*="#{$gl-grid-selector}"] {
-        > [class*="#{$col}-1"]{ flex-basis: $glp_col-1;}
-        > [class*="#{$col}-2"]{ flex-basis: $glp_col-2;}
-        > [class*="#{$col}-3"]{ flex-basis: $glp_col-3;}
-        > [class*="#{$col}-4"]{ flex-basis: $glp_col-4;}
-        > [class*="#{$col}-5"]{ flex-basis: $glp_col-5;}
-        > [class*="#{$col}-6"]{ flex-basis: $glp_col-6;}
-        > [class*="#{$col}-7"]{ flex-basis: $glp_col-7;}
-        > [class*="#{$col}-8"]{ flex-basis: $glp_col-8;}
-        > [class*="#{$col}-9"]{ flex-basis: $glp_col-9;}
-        > [class*="#{$col}-10"]{ flex-basis: $glp_col-10;}
-        > [class*="#{$col}-11"]{ flex-basis: $glp_col-11;}
-        > [class*="#{$col}-12"]{ flex-basis: $glp_col-12;}
+        > [class*="#{$col}-1"]{ flex-basis: $glp_col-1; max-width: $glp_col-1;}
+        > [class*="#{$col}-2"]{ flex-basis: $glp_col-2; max-width: $glp_col-2;}
+        > [class*="#{$col}-3"]{ flex-basis: $glp_col-3; max-width: $glp_col-3;}
+        > [class*="#{$col}-4"]{ flex-basis: $glp_col-4; max-width: $glp_col-4;}
+        > [class*="#{$col}-5"]{ flex-basis: $glp_col-5; max-width: $glp_col-5;}
+        > [class*="#{$col}-6"]{ flex-basis: $glp_col-6; max-width: $glp_col-6;}
+        > [class*="#{$col}-7"]{ flex-basis: $glp_col-7; max-width: $glp_col-7;}
+        > [class*="#{$col}-8"]{ flex-basis: $glp_col-8; max-width: $glp_col-8;}
+        > [class*="#{$col}-9"]{ flex-basis: $glp_col-9; max-width: $glp_col-9;}
+        > [class*="#{$col}-10"]{ flex-basis: $glp_col-10; max-width: $glp_col-10;}
+        > [class*="#{$col}-11"]{ flex-basis: $glp_col-11; max-width: $glp_col-11;}
+        > [class*="#{$col}-12"]{ flex-basis: $glp_col-12; max-width: $glp_col-12;}
     }
 }
 
