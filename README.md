@@ -2,9 +2,9 @@
 ## Just a Flexbox Grid System
 v. 2.0.8
 
-Based on Flexbox (CSS Flexible Box Layout Module), Gridlex is a very simple css grid system to quickly create modern layouts and submodules.
+Based on the Flexbox grid from http://gridlex.devlint.fr/, i adapted it to be even more flexible. Now you can mix and switch sizes, position, offset and stretching declarations however you like, both for grid/column and each different responsive media query.
 
-The concept is simple: you need to wrap your `.col` in a `.grid`.
+The concept is simple: you need to wrap your `.column` in a `.grid`.
 
 ### What can we expect?
 - Basically each column is the same width as every other cell in the grid.
@@ -40,55 +40,55 @@ Include gridlex/src/gridlex.less or gridlex/src/gridlex.scss
 **1- The basic. Just add a class `.grid-*` (from -1 to -12)**
 ```html
 <div class="grid-1">
-	<div class="col">...</div>
+	<div class="column">...</div>
 </div>
 ```
 
-**2- The precise. Compose cell by cell (with class like `.col-*`)**
+**2- The precise. Compose cell by cell (with class like `.column-*`)**
 ```html
 <div class="grid">
-	<div class="col-12">...</div>
+	<div class="column-12">...</div>
 </div>
 ```
 
-**3- The automatic. Just add number of cells you want in the grid (`.grid > .col`)**
+**3- The automatic. Just add number of cells you want in the grid (`.grid > .column`)**
 ```html
 <div class="grid">
-		<div class="col">...</div>
-		<div class="col">...</div>
+		<div class="column">...</div>
+		<div class="column">...</div>
 </div>
 ```
 
 ### Gridlex and media-queries
-Because of responsive, you sometimes need to change the size of columns: with this keys as classes you can control your layout by media-queries.
+Because of responsive, you sometimes need to change the size of columns: with this html markup you can change that:
 <table>
 <thead>
 	<tr>
 		<th>CSS Media Query</th>
 		<th>Applies</th>
-		<th>Usage</th>
+		<th>Usage/Tag</th>
 	</tr>
 </thead>
 <tbody>
 	<tr>
 		<td><code>@media screen and (max-width: 35.5em)</code></td>
 		<td>Max 568px</td>
-		<td><code><b>_xs</b>-*</code></td>
+		<td><code><b>small</b>="*"</code></td>
 	</tr>
 	<tr>
 		<td><code>@media screen and (max-width: 48em)</code></td>
 		<td>Max 768px</td>
-		<td><code><b>_sm</b>-*</code></td>
+		<td><code><b>medium</b>="*"</code></td>
 	</tr>
 	<tr>
 		<td><code>@media screen and (max-width: 64em)</code></td>
 		<td>Max 1024px</td>
-		<td><code><b>_md</b>-*</code></td>
+		<td><code><b>large</b>="*"</code></td>
 	</tr>
 	<tr>
 		<td><code>@media screen and (max-width: 80em)</code></td>
 		<td>Max 1280px</td>
-		<td><code><b>_lg</b>-*</code></td>
+		<td><code><b>huge</b>="*"</code></td>
 	</tr>
 </tbody>
 </table>
